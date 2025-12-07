@@ -4,5 +4,10 @@ import path from 'node:path'
 
 export default defineConfig({
   plugins: [vue()],
-  base: 'https://elvilis.github.io/portafolioWeb/'
+  base: 'https://elvilis.github.io/PortafolioWeb/',
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src')
+    }
+  }
 })
